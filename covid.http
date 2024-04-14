@@ -1,0 +1,79 @@
+API 1:
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}
+
+###
+API 2:
+GET http://localhost:3000/states/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzEzMDc3ODE2fQ.X0g1ZnAs1_IomFUJ7dJkRAOAlF93skgai_ht03FA9fU 
+
+###
+
+API 3:
+GET http://localhost:3000/states/8/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzEzMDc3ODE2fQ.X0g1ZnAs1_IomFUJ7dJkRAOAlF93skgai_ht03FA9fU 
+
+###
+
+API 4:
+POST http://localhost:3000/districts/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzEzMDc3ODE2fQ.X0g1ZnAs1_IomFUJ7dJkRAOAlF93skgai_ht03FA9fU 
+Content-Type: application/json
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+###
+
+API 5:
+GET http://localhost:3000/districts/765/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzEzMDc3ODE2fQ.X0g1ZnAs1_IomFUJ7dJkRAOAlF93skgai_ht03FA9fU 
+
+###
+
+API 6:
+DELETE http://localhost:3000/districts/766/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzEzMDc3ODE2fQ.X0g1ZnAs1_IomFUJ7dJkRAOAlF93skgai_ht03FA9fU 
+
+###
+
+API 7:
+PUT http://localhost:3000/districts/755/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzEzMDc3ODE2fQ.X0g1ZnAs1_IomFUJ7dJkRAOAlF93skgai_ht03FA9fU 
+Content-Type: application/json
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+###
+
+API 8:
+GET http://localhost:3000/states/8/stats/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzEzMDc3ODE2fQ.X0g1ZnAs1_IomFUJ7dJkRAOAlF93skgai_ht03FA9fU 
+
+###
+
+GET http://localhost:3000/districts/
+
+###
+
+GET http://localhost:3000/users/
+
+###
